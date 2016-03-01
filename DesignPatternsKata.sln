@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsKata", "DesignPatternsKata\DesignPatternsKata.csproj", "{A3641C13-BEF0-419A-8740-2DA30E131A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{19FBE3AD-E92A-4840-A287-08D0F5818CFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3641C13-BEF0-419A-8740-2DA30E131A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3641C13-BEF0-419A-8740-2DA30E131A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3641C13-BEF0-419A-8740-2DA30E131A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3641C13-BEF0-419A-8740-2DA30E131A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19FBE3AD-E92A-4840-A287-08D0F5818CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19FBE3AD-E92A-4840-A287-08D0F5818CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19FBE3AD-E92A-4840-A287-08D0F5818CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19FBE3AD-E92A-4840-A287-08D0F5818CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
