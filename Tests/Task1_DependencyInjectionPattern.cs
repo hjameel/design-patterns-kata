@@ -20,7 +20,7 @@ namespace Tests
 			//    "Program to an interface, not an implementation"
 
 			// Do this:
-			// Update the Friend class, so that it adhere's to this principle. This will enable
+			// Update the Friend class, so that it adheres to this principle. This will enable
 			// you to use the mock object below to replace this assertion and make sure that your
 			// friend used their voice and said Hi!
 
