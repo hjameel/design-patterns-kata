@@ -16,6 +16,12 @@ namespace DesignPatternsKata.Task2
 		}
 	}
 
+	public enum Country
+	{
+		UnitedKingdom,
+		UnitedStates
+	}
+
 	public class ReceiptGenerator
 	{
 		private readonly Country _salesCountry;
@@ -47,11 +53,5 @@ namespace DesignPatternsKata.Task2
 
 			return string.Format("Price: {0:0.##} Tax: {1:0.##}", priceAfterTax, taxAmount);
 		}
-	}
-
-	public enum Country
-	{
-		UnitedKingdom,
-		UnitedStates
 	}
 }
