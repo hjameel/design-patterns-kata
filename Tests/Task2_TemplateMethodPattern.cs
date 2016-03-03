@@ -17,7 +17,8 @@ namespace Tests
 		// Encapsulate the logic for determining tax amount, and apply the template method design pattern
 		// to allow it to be varied.
 
-		// Question: Where do we decide which concrete receipt generator to create?
+		// Something to think about once you've done this step:
+		//   Where do we decide which concrete receipt generator to create?
 
 		[Test]
 		public void Should_apply_15_percent_tax_rate_in_France()
@@ -25,7 +26,8 @@ namespace Tests
 			// Once you've applied the template method pattern, fill in the test and add support for
 			// French receipts, with a tax rate of 15 percent.
 
-			// Question: What modifications were required to add this new behaviour?
+			// Something to think about once you've done this step:
+			//   What modifications were required to add this new behaviour?
 		}
 
 		[Test]
@@ -47,8 +49,8 @@ namespace Tests
 			// Switching this functionality on and off should be configurable in the same way as the
 			// country.
 
-			// Question: How many classes would be required to have a custom optional discount for
-			// each country?
+			// Something to think about once you've done this step:
+			//   How many classes would be required to have a custom optional discount for each country?
 		}
 
 		[Test]

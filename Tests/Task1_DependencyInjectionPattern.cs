@@ -26,7 +26,7 @@ namespace Tests
 
 			Assert.Fail("I have no idea if my friend spoke or not");
 
-			// Some questions for when you're done:
+			// Some questions to think about once you're done:
 			// Where should we instantiate the objects which make up our application, if not at the
 			// point where they are used?
 

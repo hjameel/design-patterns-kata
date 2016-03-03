@@ -17,16 +17,18 @@ namespace Tests
 
 		// Read over the ReceiptGenerator code in Task3 folder. It now makes use of the strategy pattern
 		// to encapsulate the variation in tax logic. Also note the use of a factory object to control
-		// the creation of the tax strategy which gets used. Often one design patterns sets the context
-		// for the use of another.
+		// the creation of the tax strategy which gets used. Often one design pattern sets the context for
+		// the use of another.
 
+		// Do this:
 		// Implement the functionality described in the tests below, this time using the strategy and
 		// factory patterns.
 
-		// Question: How does the strategy pattern avoid the issues you had with template method? What
+		// Some questions to think about once you're done:
+		// How does the strategy pattern avoid the issues you had with template method? What
 		// advantages does template method have over strategy, if any?
 
-		// Question: How do the Gang of Four's design principles relate to the SOLID principles? Which do
+		// How do the Gang of Four's design principles relate to the SOLID principles? Which do
 		// you find more useful for thinking about the design of your code?
 
 		[Test]
@@ -34,7 +36,8 @@ namespace Tests
 		{
 			// Add support for French receipts, with a tax rate of 15 percent.
 
-			// Question: What modifications were required to add this new behaviour?
+			// Something to think about once you've done this step:
+			//   What modifications were required to add this new behaviour?
 		}
 
 		[Test]
@@ -56,8 +59,8 @@ namespace Tests
 			// Switching this functionality on and off should be configurable in the same way as the
 			// country.
 
-			// Question: How many classes would be required to have a custom optional discount for
-			// each country?
+			// Something to think about once you've done this step:
+			//   How many classes would be required to have a custom optional discount for each country?
 		}
 
 		[Test]
