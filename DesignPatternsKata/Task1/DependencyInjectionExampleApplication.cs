@@ -1,9 +1,10 @@
 ﻿using System;
 
-namespace DesignPatternsKata
+namespace DesignPatternsKata.Task1
 {
 	public static class App
 	{
+		// The entry point of this application
 		public static void Main()
 		{
 			new Friend().SayHi();

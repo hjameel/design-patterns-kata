@@ -1,5 +1,7 @@
-﻿using NUnit.Framework;
-using DesignPatternsKata;
+﻿// ReSharper disable InconsistentNaming
+
+using DesignPatternsKata.Task1;
+using NUnit.Framework;
 
 namespace Tests
 {
