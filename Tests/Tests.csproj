@@ -41,6 +41,7 @@
     <Compile Include="Task1_DependencyInjectionPattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Task2_TemplateMethodPattern.cs" />
+    <Compile Include="Task3_StrategyAndAbstractFactoryPatterns.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -37,6 +37,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Task1\FriendApplication.cs" />
     <Compile Include="Task2\ReceiptGeneratorApplication.cs" />
+    <Compile Include="Task3\Country.cs" />
+    <Compile Include="Task3\TaxAmountCalculator.cs" />
+    <Compile Include="Task3\ReceiptGeneratorApplication.cs" />
+    <Compile Include="Task3\TaxAmountCalculatorFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
