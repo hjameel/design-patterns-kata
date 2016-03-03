@@ -17,8 +17,9 @@ namespace Tests
 
 			// An important object oriented design principle, which the Gang of Four recommend is:
 
-			// 	  "Program to an interface, not an implementation"
+			//    "Program to an interface, not an implementation"
 
+			// Do this:
 			// Update the Friend class, so that it adhere's to this principle. This will enable
 			// you to use the mock object below to replace this assertion and make sure that your
 			// friend used their voice and said Hi!
@@ -27,6 +28,8 @@ namespace Tests
 
 			// Question: Where should we construct the objects which make up our application, if
 			// not at the point where they are used?
+
+			// Question: How do we test that our application has been constructed and runs correctly?
 		}
 
 		class MockVoice
