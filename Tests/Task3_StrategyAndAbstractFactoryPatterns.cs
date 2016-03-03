@@ -1,6 +1,5 @@
 ﻿// ReSharper disable InconsistentNaming
 
-using System;
 using DesignPatternsKata.Task3;
 using NUnit.Framework;
 
@@ -9,21 +8,30 @@ namespace Tests
 	[TestFixture]
 	public class Task3_StrategyAndAbstractFactoryPatterns
 	{
-		// Another of the Gang of Four's object oriented design principles is:
+		// As you saw in task 2, using the template method pattern when more than one concept is varying
+		// can lead to a messy explosion of classes.
 
-		//    "Encapsulate the concept that varies."
+		// This leads us on to another of the Gang of Four's principles:
 
-		// In this example the logic for determining the amount of tax to apply varies by country.
-		// Encapsulate the logic for determining tax amount, and apply the template method design pattern
-		// to allow it to be varied.
+		//    "Favor object composition over class inheritance."
 
-		// Question: Where do we decide which concrete receipt generator to create?
+		// Read over the ReceiptGenerator code in Task3 folder. It now makes use of the strategy pattern
+		// to encapsulate the variation in tax logic. Also note the use of a factory object to control
+		// the creation of the tax strategy which gets used. Often one design patterns sets the context
+		// for the use of another.
+
+		// Implement the functionality described in the tests below, this time using the strategy and
+		// factory patterns.
+
+		// Question: How does the strategy pattern avoid the issues you had with template method?
+
+		// Question: How do the Gang of Four's design principles relate to the SOLID principles? Which do
+		// you find more useful for thinking about the design of your code?
 
 		[Test]
 		public void Should_apply_15_percent_tax_rate_in_France()
 		{
-			// Once you've applied the template method pattern, fill in the test and add support for
-			// French receipts, with a tax rate of 15 percent.
+			// Add support for French receipts, with a tax rate of 15 percent.
 
 			// Question: What modifications were required to add this new behaviour?
 		}
