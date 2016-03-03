@@ -5,6 +5,6 @@ patterns.
 
 To work through the exercises, follow the instructions in each of the test
 classes in order:
-# Task1_DependencyInjectionPattern
-# Task2_TemplateMethodPattern
-# Task3_StrategyAndAbstractFactoryPatterns
+1. Task1_DependencyInjectionPattern
+2. Task2_TemplateMethodPattern
+3. Task3_StrategyAndAbstractFactoryPatterns
