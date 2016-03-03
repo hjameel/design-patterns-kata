@@ -23,7 +23,8 @@ namespace Tests
 		// Implement the functionality described in the tests below, this time using the strategy and
 		// factory patterns.
 
-		// Question: How does the strategy pattern avoid the issues you had with template method?
+		// Question: How does the strategy pattern avoid the issues you had with template method? What
+		// advantages does template method have over strategy, if any?
 
 		// Question: How do the Gang of Four's design principles relate to the SOLID principles? Which do
 		// you find more useful for thinking about the design of your code?
