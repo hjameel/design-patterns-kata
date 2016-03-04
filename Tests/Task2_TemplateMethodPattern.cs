@@ -18,7 +18,7 @@ namespace Tests
 		// (Hint: You may need to modify some of the existing tests)
 
 		// Something to think about once you've done this step:
-		//   Where do we decide which concrete receipt to create?
+		//   Where do we decide which concrete Receipt object to create?
 
 		// (Scroll further down further to see the rest of this task)
 
