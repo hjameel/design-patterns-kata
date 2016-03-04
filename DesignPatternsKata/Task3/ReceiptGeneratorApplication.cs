@@ -11,22 +11,22 @@ namespace DesignPatternsKata.Task3
 			const Country configuredCountry = Country.UnitedKingdom;
 
 			var taxAmountCalculator = new TaxAmountCalculatorFactory().CreateFor(configuredCountry);
-			var receiptGenerator = new ReceiptGenerator(taxAmountCalculator);
+			var receipt = new Receipt(taxAmountCalculator);
 
-			Console.WriteLine(receiptGenerator.GetReceiptForItem(100));
+			Console.WriteLine(receipt.ForItemCosting(100));
 		}
 	}
 
-	public class ReceiptGenerator
+	public class Receipt
 	{
 		private readonly ITaxAmountCalculator _taxAmountCalculator;
 
-		public ReceiptGenerator(ITaxAmountCalculator taxAmountCalculator)
+		public Receipt(ITaxAmountCalculator taxAmountCalculator)
 		{
 			_taxAmountCalculator = taxAmountCalculator;
 		}
 
-		public string GetReceiptForItem(decimal price)
+		public string ForItemCosting(decimal price)
 		{
 			var taxAmount = _taxAmountCalculator.CalculateTaxAmount(price);
 

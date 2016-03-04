@@ -10,9 +10,9 @@ namespace DesignPatternsKata.Task2
 			// In a real application this might be set in a config file
 			const Country configuredCountry = Country.UnitedKingdom;
 
-			var receiptGenerator = new ReceiptGenerator(configuredCountry);
+			var receipt = new Receipt(configuredCountry);
 
-			Console.WriteLine(receiptGenerator.GetReceiptForItem(100));
+			Console.WriteLine(receipt.ForItemCosting(100));
 		}
 	}
 
@@ -22,16 +22,16 @@ namespace DesignPatternsKata.Task2
 		UnitedStates
 	}
 
-	public class ReceiptGenerator
+	public class Receipt
 	{
 		private readonly Country _salesCountry;
 
-		public ReceiptGenerator(Country salesCountry)
+		public Receipt(Country salesCountry)
 		{
 			_salesCountry = salesCountry;
 		}
 
-		public string GetReceiptForItem(decimal price)
+		public string ForItemCosting(decimal price)
 		{
 			decimal taxAmount = 0;
 			switch (_salesCountry)

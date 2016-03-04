@@ -15,7 +15,7 @@ namespace Tests
 
 		//    "Favor object composition over class inheritance."
 
-		// Read over the ReceiptGenerator code in Task3 folder. It now makes use of the strategy pattern
+		// Read over the Receipt code in Task3 folder. It now makes use of the strategy pattern
 		// to encapsulate the variation in tax logic. Also note the use of a factory object to control
 		// the creation of the tax strategy which gets used. Often one design pattern sets the context for
 		// the use of another.
@@ -66,11 +66,9 @@ namespace Tests
 		[Test]
 		public void Should_apply_20_percent_tax_rate_in_UK()
 		{
-			var receiptGenerator = new ReceiptGenerator(new UnitedKingdomTaxAmountCalculator());
+			var receipt = new Receipt(new UnitedKingdomTaxAmountCalculator());
 
-			var receipt = receiptGenerator.GetReceiptForItem(100);
-
-			Assert.That(receipt, Is.EqualTo("Price: 120 Tax: 20"));
+			Assert.That(receipt.ForItemCosting(100), Is.EqualTo("Price: 120 Tax: 20"));
 		}
 
 		[TestCase(10, 11, 1)]
@@ -78,21 +76,19 @@ namespace Tests
 		public void Should_apply_10_percent_tax_rate_in_US_for_items_10_dollars_and_over(
 			decimal price, decimal priceAfterTax, decimal taxAmount)
 		{
-			var receiptGenerator = new ReceiptGenerator(new UnitedStatesTaxAmountCalculator());
+			var receipt = new Receipt(new UnitedStatesTaxAmountCalculator());
 
-			var receipt = receiptGenerator.GetReceiptForItem(price);
-
-			Assert.That(receipt, Is.EqualTo(string.Format("Price: {0} Tax: {1}", priceAfterTax, taxAmount)));
+			Assert.That(
+				receipt.ForItemCosting(price),
+				Is.EqualTo(string.Format("Price: {0} Tax: {1}", priceAfterTax, taxAmount)));
 		}
 
 		[Test]
 		public void Should_apply_0_percent_tax_rate_in_US_for_items_under_10_dollars()
 		{
-			var receiptGenerator = new ReceiptGenerator(new UnitedStatesTaxAmountCalculator());
+			var receipt = new Receipt(new UnitedStatesTaxAmountCalculator());
 
-			var receipt = receiptGenerator.GetReceiptForItem(9);
-
-			Assert.That(receipt, Is.EqualTo("Price: 9 Tax: 0"));
+			Assert.That(receipt.ForItemCosting(9), Is.EqualTo("Price: 9 Tax: 0"));
 		}
 	}
 }
